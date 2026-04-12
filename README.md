@@ -69,7 +69,7 @@ Same config pattern. Set the `DATALAYER_API_KEY` environment variable and run `n
 
 ### Get your API key
 
-1. Sign up at [datalayer.dev](https://datalayer.dev) (free, no credit card)
+1. Sign up at [datalayer.sh](https://datalayer.sh) (free, no credit card)
 2. Go to Dashboard → API Keys → Create key
 3. Copy the `sk_live_...` key into your config
 
@@ -175,8 +175,8 @@ Same config pattern. Set the `DATALAYER_API_KEY` environment variable and run `n
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `DATALAYER_API_KEY` | Yes | Your API key from [datalayer.dev](https://datalayer.dev) |
-| `DATALAYER_API_URL` | No | Override API base URL (default: `https://api.datalayer.dev`) |
+| `DATALAYER_API_KEY` | Yes | Your API key from [datalayer.sh](https://datalayer.sh) |
+| `DATALAYER_API_URL` | No | Override API base URL (default: `https://api.datalayer.sh`) |
 
 ---
 
@@ -196,10 +196,10 @@ Same config pattern. Set the `DATALAYER_API_KEY` environment variable and run `n
 
 ## Links
 
-- [Website](https://datalayer.dev)
-- [Live Demo](https://datalayer.dev/playground) — try the data, no signup required
-- [API Documentation](https://api.datalayer.dev/docs)
-- [Dashboard & API Keys](https://datalayer.dev/signup)
+- [Website](https://datalayer.sh)
+- [Live Demo](https://datalayer.sh/playground) — try the data, no signup required
+- [API Documentation](https://api.datalayer.sh/docs)
+- [Dashboard & API Keys](https://datalayer.sh/signup)
 
 ---
 

@@ -1,8 +1,8 @@
-const BASE_URL = process.env.DATALAYER_API_URL ?? 'https://api.datalayer.dev';
+const BASE_URL = process.env.DATALAYER_API_URL ?? 'https://api.datalayer.sh';
 const API_KEY = process.env.DATALAYER_API_KEY;
 
 function assertKey(): string {
-  if (!API_KEY) throw new Error('DATALAYER_API_KEY environment variable is not set. Get your key at https://app.datalayer.dev');
+  if (!API_KEY) throw new Error('DATALAYER_API_KEY environment variable is not set. Get your key at https://app.datalayer.sh');
   return API_KEY;
 }
 

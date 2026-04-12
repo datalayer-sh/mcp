@@ -23,7 +23,7 @@
     "crm-enrichment", "sales-automation", "gtm"
   ],
   "license": "MIT",
-  "homepage": "https://datalayer.dev",
+  "homepage": "https://datalayer.sh",
   "repository": {
     "type": "git",
     "url": "https://github.com/datalayer-sh/mcp.git"
