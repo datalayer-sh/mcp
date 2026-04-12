@@ -12,12 +12,24 @@
     "start": "node dist/index.js",
     "prepublishOnly": "npm run build"
   },
-  "keywords": ["mcp", "model-context-protocol", "b2b", "enrichment", "datalayer", "ai-agent", "claude", "cursor"],
+  "keywords": [
+    "mcp", "model-context-protocol", "mcp-server",
+    "b2b", "enrichment", "lead-enrichment", "data-enrichment",
+    "company-data", "contact-data", "people-search", "company-search",
+    "email-finder", "work-email", "phone-number", "linkedin",
+    "sales-intelligence", "lead-generation", "prospecting",
+    "technographics", "intent-signals", "buying-intent",
+    "ai-agent", "claude", "cursor", "windsurf",
+    "crm-enrichment", "sales-automation", "gtm"
+  ],
   "license": "MIT",
+  "homepage": "https://datalayer.dev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/blink-new/datalayer.git",
-    "directory": "mcp"
+    "url": "https://github.com/datalayer-sh/mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/datalayer-sh/mcp/issues"
   },
   "engines": { "node": ">=18" },
   "dependencies": {
