@@ -1,5 +1,5 @@
 {
-  "name": "@datalayer/mcp",
+  "name": "@datalayer-sh/mcp",
   "version": "0.1.0",
   "description": "DataLayer MCP Server — B2B enrichment for AI agents. 60M companies, 300M contacts, intent signals.",
   "bin": { "datalayer-mcp": "./dist/index.js" },

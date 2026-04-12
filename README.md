@@ -2,7 +2,7 @@
 
 **Give your AI agent access to 60M+ companies and 300M+ verified contacts.** Enrich leads, find work emails, discover tech stacks, and identify buying intent — directly from Claude, Cursor, Windsurf, or any MCP-compatible AI agent.
 
-[![npm version](https://img.shields.io/npm/v/@datalayer/mcp.svg)](https://www.npmjs.com/package/@datalayer/mcp)
+[![npm version](https://img.shields.io/npm/v/@datalayer-sh/mcp.svg)](https://www.npmjs.com/package/@datalayer-sh/mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -36,7 +36,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
   "mcpServers": {
     "datalayer": {
       "command": "npx",
-      "args": ["-y", "@datalayer/mcp"],
+      "args": ["-y", "@datalayer-sh/mcp"],
       "env": {
         "DATALAYER_API_KEY": "sk_live_your_key_here"
       }
@@ -54,7 +54,7 @@ Add to `.cursor/mcp.json` in your project root:
   "mcpServers": {
     "datalayer": {
       "command": "npx",
-      "args": ["-y", "@datalayer/mcp"],
+      "args": ["-y", "@datalayer-sh/mcp"],
       "env": {
         "DATALAYER_API_KEY": "sk_live_your_key_here"
       }
@@ -65,7 +65,7 @@ Add to `.cursor/mcp.json` in your project root:
 
 ### Windsurf / Other MCP Clients
 
-Same config pattern. Set the `DATALAYER_API_KEY` environment variable and run `npx -y @datalayer/mcp` via stdio.
+Same config pattern. Set the `DATALAYER_API_KEY` environment variable and run `npx -y @datalayer-sh/mcp` via stdio.
 
 ### Get your API key
 
