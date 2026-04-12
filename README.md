@@ -73,7 +73,7 @@ Same config pattern. Set the `DATALAYER_API_KEY` environment variable and run `n
 2. Go to Dashboard → API Keys → Create key
 3. Copy the `sk_live_...` key into your config
 
-**100 free credits included** — enough to test every tool.
+**10 free credits included** — enough to test every tool.
 
 ---
 
@@ -167,7 +167,7 @@ Same config pattern. Set the `DATALAYER_API_KEY` environment variable and run `n
 - **Failed lookups (404)**: Free — no credits consumed
 - **Credits never expire** on top-up packs
 
-100 free credits on signup. Plans from $49/mo.
+10 free credits on signup. Plans from $49/mo.
 
 ---
 
