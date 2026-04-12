@@ -16,7 +16,7 @@ import { registerCompanyJobs } from './tools/company-jobs.js';
 import { registerIntentSignals } from './tools/intent-signals.js';
 
 const server = new McpServer(
-  { name: 'datalayer', version: '0.1.0' },
+  { name: 'datalayer', version: '0.1.3' },
   {
     capabilities: { logging: {} },
     instructions: `DataLayer MCP Server — B2B enrichment for AI agents.

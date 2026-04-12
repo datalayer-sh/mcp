@@ -25,8 +25,9 @@ export async function apiGet(path: string, params?: Record<string, string>): Pro
 
 export async function apiPost(path: string, body: Record<string, unknown>): Promise<any> {
   const key = assertKey();
+  const url = new URL(path, BASE_URL);
 
-  const res = await fetch(`${BASE_URL}${path}`, {
+  const res = await fetch(url.toString(), {
     method: 'POST',
     headers: { 'X-API-Key': key, 'Content-Type': 'application/json' },
     body: JSON.stringify(body),

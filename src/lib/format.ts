@@ -4,7 +4,7 @@ function num(v: unknown): string {
   if (v == null || v === '') return D;
   const n = Number(v);
   if (isNaN(n)) return String(v);
-  if (n >= 1_000_000_000) return `$${(n / 1_000_000_000).toFixed(1)}B`;
+  if (n >= 1_000_000_000) return `${(n / 1_000_000_000).toFixed(1)}B`;
   if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
   if (n >= 1_000) return n.toLocaleString('en-US');
   return String(n);
@@ -205,7 +205,7 @@ export function formatTechnographics(data: any): string {
     if (value) lines.push(`- **${name}**: ${value}`);
   }
 
-  if (lines.length === 2) return 'No tech stack data available.';
+  if (lines.length === 1) return 'No tech stack data available.';
   return lines.join('\n');
 }
 
