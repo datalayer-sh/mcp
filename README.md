@@ -5,9 +5,30 @@
 [![npm version](https://img.shields.io/npm/v/@datalayer-sh/mcp.svg)](https://www.npmjs.com/package/@datalayer-sh/mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+> **🚀 New: Hosted MCP server.** The recommended way to connect to DataLayer is now the hosted remote MCP server at `https://api.datalayer.sh/mcp`. It uses Streamable HTTP (MCP spec 2025-11-25) and OAuth 2.1 + Dynamic Client Registration — paste the URL into Claude.ai, click Approve, done. No install, no API key in the agent. See ["Hosted MCP Server: One URL, OAuth, No Install"](https://datalayer.sh/articles/hosted-mcp-server-oauth) for the full setup. **This npm package (stdio transport) is still maintained as a fallback for environments that can't reach a remote server.**
+
 ---
 
-## What is this?
+## Recommended: Hosted Server (no install)
+
+```
+URL: https://api.datalayer.sh/mcp
+```
+
+| Client      | Setup                                                                                       |
+|-------------|---------------------------------------------------------------------------------------------|
+| Claude.ai   | Settings → Connectors → Add custom connector → paste URL → click Approve                    |
+| Claude Code | `claude mcp add datalayer https://api.datalayer.sh/mcp --transport http`                    |
+| Cursor      | `~/.cursor/mcp.json` → `{ "mcpServers": { "datalayer": { "url": "https://api.datalayer.sh/mcp" } } }` |
+| Headless    | `Authorization: Bearer sk_live_...` on POST `/mcp`                                          |
+
+OAuth metadata (RFC 9728): https://api.datalayer.sh/.well-known/oauth-protected-resource
+
+The rest of this README covers the **legacy stdio package** for environments where the hosted server isn't reachable.
+
+---
+
+## What is this (the stdio package)?
 
 DataLayer is a B2B data enrichment API. This MCP server lets AI agents call it directly — no code, no HTTP requests, just natural language.
 

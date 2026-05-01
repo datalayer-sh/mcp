@@ -16,10 +16,12 @@ import { registerCompanyJobs } from './tools/company-jobs.js';
 import { registerIntentSignals } from './tools/intent-signals.js';
 
 const server = new McpServer(
-  { name: 'datalayer', version: '0.1.3' },
+  { name: 'datalayer', version: '0.2.0' },
   {
     capabilities: { logging: {} },
-    instructions: `DataLayer MCP Server — B2B enrichment for AI agents.
+    instructions: `DataLayer MCP Server (stdio fallback) — B2B enrichment for AI agents.
+
+NOTE: The recommended way to use DataLayer with AI agents is now the hosted remote MCP server at https://api.datalayer.sh/mcp (Streamable HTTP transport, OAuth 2.1 + Dynamic Client Registration). Add it as a custom connector in Claude.ai or via 'claude mcp add datalayer https://api.datalayer.sh/mcp --transport http'. This stdio package is maintained for environments without remote-MCP support.
 
 Available actions:
 - Enrich any company by domain → full profile with signals (tech stack, funding, traffic, ad spend, growth)
